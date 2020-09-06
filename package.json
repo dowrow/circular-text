@@ -1,0 +1,36 @@
+{
+  "name": "@webpunk/circular-text",
+  "version": "1.0.0",
+  "description": "Web component to display text along a circle shape",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npx es-dev-server --node-resolve --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dowrow/circular-text.git"
+  },
+  "keywords": [
+    "web",
+    "component",
+    "circular",
+    "radial",
+    "text",
+    "span",
+    "p",
+    "circle",
+    "shape"
+  ],
+  "author": "Diego Castaño (@Dowrow)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dowrow/circular-text/issues"
+  },
+  "homepage": "https://github.com/dowrow/circular-text#readme",
+  "dependencies": {
+    "es-dev-server": "^1.57.4",
+    "lit-element": "^2.4.0"
+  },
+  "devDependencies": {}
+}
