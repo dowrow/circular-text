@@ -1,6 +1,7 @@
 {
   "name": "@webpunk/circular-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "visubility": "public",
   "description": "Web component to display text along a circle shape",
   "main": "src/index.js",
   "scripts": {
@@ -22,15 +23,42 @@
     "circle",
     "shape"
   ],
-  "author": "Diego Castaño (@Dowrow)",
+  "author": "Diego Castaño (hey@webpunk.dev)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dowrow/circular-text/issues"
   },
   "homepage": "https://github.com/dowrow/circular-text#readme",
   "dependencies": {
-    "es-dev-server": "^1.57.4",
     "lit-element": "^2.4.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@pika/plugin-build-node": "^0.9.2",
+    "@pika/plugin-build-types": "^0.9.2",
+    "@pika/plugin-build-web": "^0.9.2",
+    "@pika/plugin-standard-pkg": "^0.9.2",
+    "es-dev-server": "^1.57.4",
+    "typescript": "^3.9.7"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__tests__/**/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-build-types"
+      ]
+    ]
+  }
 }
