@@ -33,7 +33,8 @@ export class CircularText extends LitElement {
 
     render() {
         return html`
-        <div 
+        <div
+            aria-label="${this.text}"
             class="circle" 
             style="height: ${this.radius * 2}px; width: ${this.radius * 2}px">
             ${this._renderText()}

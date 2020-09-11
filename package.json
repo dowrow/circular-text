@@ -6,7 +6,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "npx es-dev-server --node-resolve --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx @pika/pack",
+    "publish": "npm publish pkg"
   },
   "repository": {
     "type": "git",
