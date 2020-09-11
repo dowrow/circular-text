@@ -20,9 +20,9 @@ Otherwise, include it from the CDN:
 
 Then you'll be able to use it like:
 ```
-<circular-text 
-    text="THE EARTH IS FLAT"
-    radius="100">
+<circular-text
+    text="FREE SHIPPING · FREE SHIPPING · "
+    radius="90">
 </circular-text>
 ```
 
