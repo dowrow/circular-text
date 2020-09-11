@@ -1,6 +1,7 @@
 # circular-text
 Web component to display text along a circle shape
 
+![Circular text example](circle.png)
 
 ## How to use
 
