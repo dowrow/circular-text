@@ -12,18 +12,12 @@ export class CircularText extends LitElement {
 
     static get styles() {
         return css`
-            ::slotted(*) {
-                display: none;
-                visibility: hidden;
-            }
-
             .circle {
                 display: block;
                 position: relative;
                 padding: 0;
                 margin: 0;
             }
-
             .circle * {
                 margin: 0;
                 left: 50%;
@@ -39,7 +33,9 @@ export class CircularText extends LitElement {
 
     render() {
         return html`
-        <div class="circle" style="height: ${this.radius * 2}px; width: ${this.radius * 2}px">
+        <div 
+            class="circle" 
+            style="height: ${this.radius * 2}px; width: ${this.radius * 2}px">
             ${this._renderText()}
         </div>`;
     }
@@ -50,7 +46,12 @@ export class CircularText extends LitElement {
         let origin = 0;
         let template = html``;
         for (let letter of letters) {
-            const letterElement = html`<p style='height:${this.radius}px;position:absolute;transform:rotate(${origin}deg);transform-origin:0 100%;'>${letter}</p>`;
+            const letterElement = html`<p style='
+                height:${this.radius}px;
+                position:absolute; 
+                transform:rotate(${origin}deg); 
+                transform-origin:0 100%;
+            '>${letter}</p>`;
             origin += rotationBetweenLetters;
             template = html`${template}${letterElement}`;
         }
