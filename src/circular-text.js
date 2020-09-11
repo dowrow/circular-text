@@ -1,6 +1,8 @@
 
 import { LitElement, html, css } from 'lit-element';
 
+const DEFAULT_RADIUS = 100;
+
 export class CircularText extends LitElement {
 
     static get properties() {
@@ -27,8 +29,7 @@ export class CircularText extends LitElement {
 
     constructor() {
         super();
-        this.radius = 100;
-        this.rotationSpeed = 0;
+        this.radius = DEFAULT_RADIUS;
     }
 
     render() {
