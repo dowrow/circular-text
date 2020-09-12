@@ -1,6 +1,6 @@
 {
   "name": "@webpunk/circular-text",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "visubility": "public",
   "description": "Web component to display text along a circle shape",
   "main": "src/index.js",
