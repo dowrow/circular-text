@@ -19,7 +19,7 @@ Otherwise, include it from the CDN:
 ```
 <script
     type="module"
-    src="https://unpkg.com/browse/@webpunk/circular-text/dist-web/index.js">
+    src="https://unpkg.com/@webpunk/circular-text/dist-web/index.bundled.js">
 </script>
 ```
 
